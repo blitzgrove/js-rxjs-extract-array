@@ -1,7 +1,7 @@
 const { Observable, from } = require('rxjs');
 const { take, filter, reduce } = require('rxjs/operators');
 
-const input = [null, null, '*', 1, 2, '*', 3, '*', 4, '*'];
+const input = [null, null, '*', 1, 2, 3, '*', 3, '*', 4, '*'];
 
 export const onlyIfFirst = predicate => {
   let first = true;
